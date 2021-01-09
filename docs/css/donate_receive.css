@@ -17,37 +17,21 @@
     transform:translate(5%,25%);
 }
 
-#buttonGroup{
-    margin-top:1vw;
-    margin-left:0;
-}
-
-.divider{
-    width:1vw;
-    height:auto;
-    display:inline-block;
-}
 
 .btn {
     background-color: white;
     border-color:gainsboro;
     color:black;
     font-size: large;
-
 }
 
-#next{
+#print{
     background-color: #06C58B !important;
-    border-color: #06C58B !important;
     border-radius: 15px;
-    color: white;
+    color:white;
     font-size: larger;
-    margin-top:5vw;
+    margin-top:4.5vw;
     padding: 15px;
-}
-
-form{
-    margin-top: 1vw;
 }
 
 img{
