@@ -14,7 +14,7 @@
 #hero{
     padding: 4vw;
     bottom:0;
-    transform:translate(0,45%);
+    transform:translate(0,40%);
 }
 
 #buttonGroup{
@@ -42,6 +42,7 @@
     border-radius: 12px;
     color: black;
     font-size: larger;
+    margin-top:5vw;
 }
 
 form{
