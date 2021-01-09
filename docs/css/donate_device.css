@@ -5,9 +5,7 @@
 }
 
 .navbar-brand{
-    font-family: 'Sofia', cursive !important;
-    font-size: xxx-large;
-    color: #26826C;
+    margin-left:7%;
     padding: 2vw;
 }
 
@@ -33,7 +31,6 @@
     border-color:gainsboro;
     color:black;
     font-size: large;
-
 }
 
 #next{
@@ -42,7 +39,7 @@
     border-radius: 15px;
     color: white;
     font-size: larger;
-    margin-top:5vw;
+    margin-top:3vw;
     padding: 15px;
 }
 
