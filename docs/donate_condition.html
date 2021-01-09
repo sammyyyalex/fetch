@@ -22,7 +22,7 @@
             "Used - Fair": {}
         }
         window.onload = function() {
-            var conditionSel = document.getElementById("subject");
+            var conditionSel = document.getElementById("condition");
             for (var x in conditionObject) {
                 conditionSel.options[conditionSel.options.length] = new Option(x, x);
             }
@@ -43,7 +43,7 @@
         <div class="col-8">
             <h4>My device condition is</h4>
             <form name="form1" id="form1">
-                <select name="condition" id="subject">
+                <select name="condition" id="condition">
                 <option value="" selected="selected">Select condition</option>
                 </select>
             </form>
