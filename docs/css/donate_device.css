@@ -14,7 +14,7 @@
 #hero{
     padding: 4vw;
     bottom:0;
-    transform:translate(0,40%);
+    transform:translate(5%,25%);
 }
 
 #buttonGroup{
@@ -37,14 +37,20 @@
 }
 
 #next{
-    background-color: gainsboro !important;
-    border-color: gainsboro !important;
-    border-radius: 12px;
-    color: black;
+    background-color: #06C58B !important;
+    border-color: #06C58B !important;
+    border-radius: 15px;
+    color: white;
     font-size: larger;
     margin-top:5vw;
+    padding: 15px;
 }
 
 form{
     margin-top: 1vw;
+}
+
+img{
+    width:100%;
+    transform:translate(-50%,-20%) !important;
 }
