@@ -1,0 +1,27 @@
+.container-fluid{
+    padding: 0;
+    font-family: 'Raleway', sans-serif;
+    background-size: cover;
+}
+
+.navbar-brand{
+    font-family: 'Sofia', cursive !important;
+    font-size: xxx-large;
+    color: #26826C;
+    padding: 2vw;
+}
+
+#hero{
+    padding: 4vw;
+    bottom:0;
+    transform:translate(0,40%);
+}
+
+.btn {
+    background-color: gainsboro !important;
+    border-color: gainsboro !important;
+    border-radius: 12px;
+    margin-top: 5vw;
+    color: black;
+    font-size: larger;
+}
