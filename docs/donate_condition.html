@@ -14,6 +14,20 @@
     <link rel="shortcut icon" href="imgs/favicon.jpg">
     <link rel="stylesheet" href="css/donate_condition.css">
     <title>Condition</title>
+
+    <script>
+        var conditionObject = {
+            "Used - Like new": {},
+            "Used - Good": {},
+            "Used - Fair": {}
+        }
+        window.onload = function() {
+            var conditionSel = document.getElementById("subject");
+            for (var x in conditionObject) {
+                conditionSel.options[conditionSel.options.length] = new Option(x, x);
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -28,17 +42,12 @@
     <div class="row" id="hero">
         <div class="col-8">
             <h4>My device condition is</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Used - Like new</a>
-                    <a class="dropdown-item" href="#">Used - Good</a>
-                    <a class="dropdown-item" href="#">Used - Fair</a>
-                </div>
-            </div>
+            <form name="form1" id="form1">
+                <select name="condition" id="subject">
+                <option value="" selected="selected">Select condition</option>
+                </select>
+            </form>
+                <br>
             <br>
             <a class="btn" href="donate_location.html" role="button" id="next">Next</a>
         </div>
