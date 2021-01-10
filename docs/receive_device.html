@@ -13,6 +13,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Sofia&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="imgs/favicon.jpg">
     <link rel="stylesheet" href="css/donate_device.css">
+    <script>
+        var count = 1;
+        function setColor(btn, color) {
+            var property = document.getElementById(btn);
+            if (count == 0) {
+                property.style.backgroundColor = "#FFFFFF"
+                count = 1;
+            }
+            else {
+                property.style.backgroundColor = "#99F4B3"
+                count = 0;
+            }
+        }
+    </script>
     <title>Device</title>
 </head>
 <body>
@@ -29,11 +43,14 @@
         <div class="col-8">
             <h4>The device I'm looking for is a</h4>
             <div class="row" id="buttonGroup">
-                <a class="btn btn-primary" role="button">Smartphone</a>
+                <input type="button" id="button" value = "Smartphone" style= "color:black"
+                       onclick="setColor('button', '#99F4B3')";/>
                 <div class="divider"></div>
-                <a class="btn btn-primary" role="button">Tablet</a>
+                <input type="button" id="button2" value = "Tablet" style= "color:black"
+                       onclick="setColor('button2', '#99F4B3')";/>
                 <div class="divider"></div>
-                <a class="btn btn-primary" role="button">Laptop</a>
+                <input type="button" id="button3" value = "Laptop" style= "color:black"
+                       onclick="setColor('button3', '#99F4B3')";/>
             </div>
             <br>
             <a class="btn" href="receive_condition.html" role="button" id="next">Next</a>
