@@ -36,3 +36,7 @@ img{
     width:100%;
     transform:translate(-50%,-20%) !important;
 }
+
+#dropdownMenuLink:hover {
+    background-color: #06C58B;
+}
