@@ -14,6 +14,20 @@
     <link rel="shortcut icon" href="imgs/favicon.jpg">
     <link rel="stylesheet" href="css/donate_location.css">
     <title>Location</title>
+
+    <script>
+        var locationObject = {
+            "Langley, BC": {},
+            "Kamloops, BC": {},
+            "Vancouver, BC": {}
+        }
+        window.onload = function() {
+            var locationSel = document.getElementById("location");
+            for (var x in locationObject) {
+                locationSel.options[locationSel.options.length] = new Option(x, x);
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -28,17 +42,11 @@
     <div class="row" id="hero">
         <div class="col-8">
             <h4>I am located in</h4>
-            <div class="dropdown">
-                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Select option
-                </button>
-                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                    <a class="dropdown-item" href="#">Langley, BC</a>
-                    <a class="dropdown-item" href="#">Kamloops, BC</a>
-                    <a class="dropdown-item" href="#">Vancouver, BC</a>
-                </div>
-            </div>
+            <select name="location" id="location">
+                <option value="" selected="selected">Select condition</option>
+            </select>
+            </form>
+
             <br>
             <a class="btn" href="donate_receive.html" role="button" id="next">Next</a>
         </div>
